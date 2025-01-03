@@ -1,3 +1,2 @@
-let anii: string = "20";
-console.log(anii);
-
+let userName: string = "devfahim09";
+console.log(userName);
