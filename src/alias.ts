@@ -38,14 +38,16 @@ const getSpeed = (value: unknown) => {
   if (typeof value === "number") {
     const convertedValue = (value * 1000) / 3600;
     console.log(`Converted value: ${convertedValue}`);
-  }
-  if (typeof value === "string") {
+  } else if (typeof value === "string") {
     const [values, unit] = value.split(" ");
 
     const convertedValue = (parseFloat(values) * 1000) / 3600;
     console.log(`Converted value: ${convertedValue}`);
+  } else {
+    console.log("Invalid input");
   }
 };
 
 getSpeed(20);
 getSpeed("20 kmh^-1");
+getSpeed(true);
