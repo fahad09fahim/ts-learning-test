@@ -22,3 +22,17 @@ const result3 = createArray<number>(12);
 // console.log("After Push --:", result);
 // result2.push(false);
 // console.log(result2);
+// const addData = <T>(myInfo: T) => {
+//   const salary = 20000;
+//   const newData = { ...myInfo, salary };
+//   return newData;
+// };
+
+// const myInfo = {
+//   name: "Fahim",
+//   age: 25,
+//   address: "Dhaka",
+// };
+
+// const results = addData(myInfo);
+// console.log(results);
