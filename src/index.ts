@@ -1,2 +1,2 @@
-let userName: string = "devfahim09";
-console.log(userName);
+// let userName: string = "devfahim09";
+// console.log(userName);
