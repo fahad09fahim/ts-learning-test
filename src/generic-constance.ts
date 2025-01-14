@@ -9,12 +9,7 @@
 //   return newData;
 // };
 
-// interface Myinfo {
-//   name: string;
-//   age: number;
-//   address: string;
-// }
-// const myInfo: Myinfo = {
+// const myInfo: MyInfoType = {
 //   name: "Fahim",
 //   age: 25,
 //   address: "Dhaka",
