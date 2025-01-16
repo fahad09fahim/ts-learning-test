@@ -28,5 +28,3 @@
 // }
 
 // console.log(compare(arr1, arr2));
-
-
