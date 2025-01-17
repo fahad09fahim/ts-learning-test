@@ -28,3 +28,13 @@
 // }
 
 // console.log(compare(arr1, arr2));
+
+class Person1 {
+  constructor(private _name: string, private _age: number) {}
+  getDetails(): string {
+    return `Name: ${this._name}, Age: ${this._age}`;
+  }
+}
+
+const newPerson = new Person1("Alice", 30);
+console.log(newPerson.getDetails());
