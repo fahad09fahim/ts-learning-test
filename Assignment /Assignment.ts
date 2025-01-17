@@ -19,20 +19,29 @@ repeated("Hello world! ", 1);
 
 /*Write a function that takes in an array of objects with properties name and age, and returns only the objects where the person's age is greater than or equal to 18*/
 
-
 interface Person {
-    name: string;
-    age: number;
-  }
-  
-  function ageFilter(people: Person[]): Person[] {
-    return people.filter((person) => person.age >= 18);
-  }
-  const people: Person[] = [
-    { name: "Alice", age: 17 },
-    { name: "Bob", age: 25 },
-    { name: "Charlie", age: 18 },
-  ];
-  
-  console.log(ageFilter(people));
-  
+  name: string;
+  age: number;
+}
+
+function ageFilter(people: Person[]): Person[] {
+  return people.filter((person) => person.age >= 18);
+}
+const people: Person[] = [
+  { name: "Alice", age: 17 },
+  { name: "Bob", age: 25 },
+  { name: "Charlie", age: 18 },
+];
+
+console.log(ageFilter(people));
+/*
+  Problem 3:
+Create a TypeScript program that uses a generic function to reverse an array of strings, and takes a variable number of strings to the array using rest parameters. Provide an example of calling the function with a variable number of strings.
+  */
+
+function reverse<T>(...items: T[]): T[] {
+  return items.reverse();
+}
+
+const reversedStrings = reverse<string>("Messi", "Ronaldo", "Neymar", "Yamal");
+console.log("Reversed array:", reversedStrings);
